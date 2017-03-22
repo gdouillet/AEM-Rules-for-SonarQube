@@ -67,8 +67,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <sonar.version>5.6.1</sonar.version>
-        <sonar.java.plugin>4.0</sonar.java.plugin>
+        <sonar.version>6.2</sonar.version>
+        <sonar.java.plugin>4.6.0.8784</sonar.java.plugin>
         <coveralls.repo.token>4rVf3NGV0jyQ3EGrc8L86oEDoHWm6MgDD</coveralls.repo.token>
         <tagName>v${project.version}</tagName>
     </properties>
@@ -108,6 +108,12 @@
             <version>4.10</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+		    <groupId>org.assertj</groupId>
+		    <artifactId>assertj-core</artifactId>
+		    <version>3.6.2</version>
+		    <scope>test</scope>
+		</dependency>
         <dependency>
             <groupId>org.sonarsource.java</groupId>
             <artifactId>java-checks-testkit</artifactId>
@@ -237,9 +243,9 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.sonar</groupId>
+                <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>5.6.1</version>
+                <version>3.2</version>
             </plugin>
             <plugin>
                 <groupId>com.mycila</groupId>
