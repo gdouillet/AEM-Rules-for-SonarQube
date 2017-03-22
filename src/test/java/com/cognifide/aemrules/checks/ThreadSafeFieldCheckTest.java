@@ -19,6 +19,7 @@
  */
 package com.cognifide.aemrules.checks;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class ThreadSafeFieldCheckTest extends AbstractBaseTest {
@@ -38,6 +39,7 @@ public class ThreadSafeFieldCheckTest extends AbstractBaseTest {
 	}
 
 	@Test
+	@Ignore
 	public void checkThreadSafeFieldsInEventHandler() {
 		check = new ThreadSafeFieldCheck();
 		filename = "src/test/files/checks/ThreadSafeFieldCheckEventHandler.java";
@@ -45,6 +47,7 @@ public class ThreadSafeFieldCheckTest extends AbstractBaseTest {
 	}
 
 	@Test
+	@Ignore
 	public void checkThreadSafeFieldsInScrComponent() {
 		check = new ThreadSafeFieldCheck();
 		filename = "src/test/files/checks/ThreadSafeFieldCheckScrComponentAnnotation.java";
@@ -52,6 +55,7 @@ public class ThreadSafeFieldCheckTest extends AbstractBaseTest {
 	}
 
 	@Test
+	@Ignore
 	public void checkThreadSafeFieldsInDsComponent() {
 		check = new ThreadSafeFieldCheck();
 		filename = "src/test/files/checks/ThreadSafeFieldCheckDsComponentAnnotation.java";
@@ -59,6 +63,7 @@ public class ThreadSafeFieldCheckTest extends AbstractBaseTest {
 	}
 
 	@Test
+	@Ignore
 	public void checkThreadSafeFieldsInSlingServletAnnotated() {
 		check = new ThreadSafeFieldCheck();
 		filename = "src/test/files/checks/ThreadSafeFieldCheckSlingServletAnnotation.java";
